@@ -4,7 +4,7 @@
 ### This Flutter application demonstrates how different string length properties behave when dealing with emojis in input fields. Understanding these differences is crucial when you need to handle text input that includes emojis, which are common in modern mobile applications.
 
 The app provides three text fields, each with a different length check method:
- - Only Length Check: Displays the length of the input based on text.length, which counts the number of UTF-16 code units.
+ - Only Length Check: Displays the input length based on text.length, which counts the number of UTF-16 code units.
  - Runes Length Check: Uses text.runes.length to count Unicode code points, offering a more accurate representation for certain characters.
  - Characters Length Check: Utilizes text.characters.length from the characters package to count grapheme clusters, providing the most accurate and user-perceived character count, especially useful for emojis.
 
@@ -14,8 +14,8 @@ The app provides three text fields, each with a different length check method:
 
 Only Length Check: Directly accesses the length property of the string.
 Runes Length Check: Converts the string into runes and then calculates the length.
-Characters Length Check: Uses the Characters class to accurately count complex characters such as emojis as single units.
+Characters Length Check: Uses the Characters class to count complex characters such as emojis as single units accurately.
 
 ## Why It Matters
-In applications that require precise text manipulation or display, understanding the difference between these methods ensures that your app can handle inputs as expected by users across various languages and symbol sets, including emojis.
+In applications requiring precise text manipulation or display, understanding the difference between these methods ensures that your app can handle inputs as users expect across various languages and symbol sets, including emojis.
 
