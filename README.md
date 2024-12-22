@@ -1,7 +1,7 @@
 # emoji_text_field_input
 
 ## Flutter Emoji Input Length Demo
-### This Flutter application demonstrates how different string length properties behave when dealing with emojis in input fields. Understanding these differences is crucial when you need to handle text input that includes emojis, which are common in modern mobile applications.
+#### This Flutter application demonstrates how different string length properties behave when dealing with emojis in input fields. Understanding these differences is crucial when you need to handle text input that includes emojis, which are common in modern mobile applications.
 
 The app provides three text fields, each with a different length check method:
  - Only Length Check: Displays the length of the input based on text.length, which counts the number of UTF-16 code units.
@@ -10,7 +10,7 @@ The app provides three text fields, each with a different length check method:
 
 
 ## Understanding the Code
-### Here’s a brief overview of how the length calculations are implemented:
+#### Here’s a brief overview of how the length calculations are implemented:
 
 Only Length Check: Directly accesses the length property of the string.
 Runes Length Check: Converts the string into runes and then calculates the length.
